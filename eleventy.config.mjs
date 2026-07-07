@@ -1,7 +1,7 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
-  // GitHub Pages のサブパス配信に対応する（独自ドメイン移行時は pathPrefix を "/" に変更）
+  // Cloudflare Pages でルート配信（サブパス配信に戻す場合は pathPrefix を変更）
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
@@ -27,7 +27,7 @@ export default function (eleventyConfig) {
       includes: "_includes",
       output: "_site",
     },
-    pathPrefix: "/shokuhin-career-lab/",
+    pathPrefix: "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
