@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+<div class="home-intro">
+  <h1>工場勤務からのキャリアアップを、一次情報で。</h1>
+  <p>
+    製造キャリアラボは、現役の食品メーカー製造エンジニアが運営するキャリアメディアです。
+    工場の現場から生産技術・品質保証・製造業DXへ進む道筋と、
+    製造業からの転職のリアルを、実体験に基づいて解説します。
+  </p>
+</div>
+
+<h2>記事一覧</h2>
+<ul class="article-list">
+  {% for article in collections.articles %}
+  <li>
+    <time datetime="{{ article.date | isoDate }}">{{ article.date | readableDate }}</time><br>
+    <a href="{{ article.url }}">{{ article.data.title }}</a>
+    <p class="article-list-desc">{{ article.data.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

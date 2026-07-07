@@ -1,0 +1,13 @@
+{
+  "name": "seizo-career-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "製造キャリアラボ — 工場勤務・製造業社員のためのキャリアアップ特化メディア",
+  "scripts": {
+    "dev": "eleventy --serve --port 8644",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

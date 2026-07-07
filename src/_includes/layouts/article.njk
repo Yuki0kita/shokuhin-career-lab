@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<article class="article">
+  <header class="article-header">
+    <p class="article-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      ・執筆: {{ site.author }}
+    </p>
+    <h1>{{ title }}</h1>
+    <p class="article-lead">{{ description }}</p>
+  </header>
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+  {% include "partials/cta.njk" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ title | dump | safe }},
+    "description": {{ description | dump | safe }},
+    "datePublished": "{{ page.date | isoDate }}",
+    "author": {
+      "@type": "Person",
+      "name": "ユウキ",
+      "description": "現役の食品メーカー製造エンジニア。製造DX・SCM改善を担当。"
+    },
+    "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }} }
+  }
+  </script>
+</article>
+<nav class="back-link">
+  <a href="/">← 記事一覧へ戻る</a>
+</nav>

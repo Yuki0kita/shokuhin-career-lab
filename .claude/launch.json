@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "seizo-career-lab",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["eleventy", "--serve", "--port", "8644"],
+      "port": 8644
+    }
+  ]
+}

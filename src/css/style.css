@@ -1,0 +1,254 @@
+/* 製造キャリアラボ — 1色 + 無彩色の引き算デザイン */
+:root {
+  --color-primary: #17567e;
+  --color-primary-soft: #eaf1f6;
+  --color-text: #22262a;
+  --color-text-muted: #6b7178;
+  --color-bg: #fbfbfa;
+  --color-surface: #ffffff;
+  --color-border: #e4e6e8;
+  --z-header: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+    "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+.site-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 28px 0 24px;
+}
+
+.site-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-tagline {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+main.container {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+/* 見出し */
+h1 {
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 56px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+h3 {
+  font-size: 18px;
+  margin: 40px 0 12px;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+ul,
+ol {
+  padding-left: 24px;
+  margin: 0 0 24px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+blockquote {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  background: var(--color-primary-soft);
+  border-left: 3px solid var(--color-primary);
+  color: var(--color-text);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 15px;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--color-primary-soft);
+  font-weight: 600;
+}
+
+/* トップの記事一覧 */
+.home-intro {
+  margin-bottom: 48px;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-list li {
+  margin: 0 0 28px;
+}
+
+.article-list a {
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.article-list a:hover {
+  text-decoration: underline;
+}
+
+.article-list .article-list-desc {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.article-list time {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* 記事ページ */
+.article-meta {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.article-lead {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.article-header {
+  margin-bottom: 48px;
+}
+
+/* CTA — 彩度の高い強調はここ1箇所のみ */
+.cta {
+  margin-top: 64px;
+  padding: 28px 24px;
+  background: var(--color-primary-soft);
+  border-radius: 8px;
+}
+
+.cta-heading {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.cta p:not(.cta-heading) {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.back-link {
+  margin-top: 48px;
+}
+
+/* フッター */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 32px 0 40px;
+  background: var(--color-surface);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.copyright {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

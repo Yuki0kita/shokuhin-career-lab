@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} — {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | url }}">
+  <meta property="og:type" content="{% if layout == 'layouts/article.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  {# TODO: GA4のプロパティ作成後、gtagスニペットをここに挿入する（njkコメントなので本番HTMLには出力されない） #}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-title">{{ site.name }}</a>
+      <p class="site-tagline">{{ site.tagline }}</p>
+    </div>
+  </header>
+  <main class="container">
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="/about/">運営者情報</a>
+        <a href="/privacy/">プライバシーポリシー・免責事項</a>
+        <a href="/contact/">お問い合わせ</a>
+      </nav>
+      <p class="copyright">© 2026 {{ site.name }}</p>
+    </div>
+  </footer>
+</body>
+</html>

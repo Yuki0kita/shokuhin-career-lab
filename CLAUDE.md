@@ -1,0 +1,24 @@
+# 製造キャリアラボ
+
+工場勤務・製造業社員向けキャリアアップ特化メディア。ラッコM&Aでの売却を前提とした資産型サイト。
+
+## 構成
+
+- Eleventy（静的サイト）。`src/` が入力、`_site/` が出力
+- 記事は `src/articles/*.md`。レイアウトは `src/_includes/layouts/`
+- サイト共通情報は `src/_data/site.js`（ドメイン移行時はここと `eleventy.config.js` の pathPrefix を変更）
+- `main` へのpushで GitHub Actions が GitHub Pages に自動デプロイ
+
+## コンテンツ方針（厳守）
+
+- 一次情報主義: 運営者（現役食品メーカー製造エンジニア）の実体験を必ず含める。一般論のみの記事は書かない
+- 勤務先の企業名・個人特定情報は絶対に書かない（ペンネーム「ユウキ」で統一）
+- 転職を煽らない。「社内異動」「残る」選択肢も公平に扱う
+- 年収等の数値は「実感値・目安」と明記する
+- 記事末尾のCTAは自動挿入される（`src/_includes/partials/cta.njk`）。CV先は tenshoku-agent-erabikata 記事
+
+## デザイン方針
+
+- 1色（--color-primary: #17567e）+ 無彩色。色を増やさない
+- 本文16px・line-height 1.8・max-width 680px を維持する
+- 装飾・アイコン・アニメーションを足さない（引き算のデザイン）
