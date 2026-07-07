@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: プライバシーポリシー・免責事項
-description: 製造キャリアラボのプライバシーポリシーと免責事項です。
+description: 食品キャリアラボのプライバシーポリシーと免責事項です。
 permalink: /privacy/
 ---
 

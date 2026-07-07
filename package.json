@@ -1,8 +1,8 @@
 {
-  "name": "seizo-career-lab",
+  "name": "shokuhin-career-lab",
   "version": "1.0.0",
   "private": true,
-  "description": "製造キャリアラボ — 工場勤務・製造業社員のためのキャリアアップ特化メディア",
+  "description": "食品キャリアラボ — 食品工場・食品メーカーで働く人のためのキャリアアップ特化メディア",
   "scripts": {
     "dev": "eleventy --serve --port 8644",
     "build": "eleventy"

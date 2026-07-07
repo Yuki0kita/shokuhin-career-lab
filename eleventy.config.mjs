@@ -27,7 +27,7 @@ export default function (eleventyConfig) {
       includes: "_includes",
       output: "_site",
     },
-    pathPrefix: "/seizo-career-lab/",
+    pathPrefix: "/shokuhin-career-lab/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };

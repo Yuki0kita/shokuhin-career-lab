@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: お問い合わせ
-description: 製造キャリアラボへのお問い合わせ方法のご案内です。
+description: 食品キャリアラボへのお問い合わせ方法のご案内です。
 permalink: /contact/
 ---
 
