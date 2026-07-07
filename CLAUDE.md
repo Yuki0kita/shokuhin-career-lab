@@ -7,8 +7,8 @@
 
 - Eleventy（静的サイト）。`src/` が入力、`_site/` が出力
 - 記事は `src/articles/*.md`。レイアウトは `src/_includes/layouts/`
-- サイト共通情報は `src/_data/site.js`（ドメイン移行時はここと `eleventy.config.mjs` の pathPrefix を変更）
-- `main` へのpushで GitHub Actions が GitHub Pages に自動デプロイ
+- サイト共通情報は `src/_data/site.js`（独自ドメイン移行時はここの url と `src/robots.txt` を変更）
+- デプロイは `npm run deploy`（Cloudflare Pages、プロジェクト名 shokuhin-career-lab）。pushでは自動デプロイされない
 
 ## コンテンツ方針（厳守）
 

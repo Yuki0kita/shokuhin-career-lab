@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yuki0kita.github.io/shokuhin-career-lab/sitemap.xml
+Sitemap: https://shokuhin-career-lab.pages.dev/sitemap.xml

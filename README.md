@@ -3,8 +3,8 @@
 食品工場・食品メーカーで働く人のためのキャリアアップ特化メディア。
 売却（ラッコM&A等）を前提とした資産型サイトとして運営する。
 
-- 本番URL: https://yuki0kita.github.io/shokuhin-career-lab/
-- 技術: Eleventy（静的サイト） + GitHub Pages（GitHub Actionsで自動デプロイ)
+- 本番URL: https://shokuhin-career-lab.pages.dev/
+- 技術: Eleventy（静的サイト） + Cloudflare Pages（`npm run deploy` で手動デプロイ）
 
 ## コンセプト（2026-07 に製造業全般から食品特化へ絞り込み）
 
@@ -16,11 +16,12 @@
 
 ```bash
 npm install
-npm run dev    # http://localhost:8644/shokuhin-career-lab/ でプレビュー
+npm run dev    # http://localhost:8644/ でプレビュー
 npm run build  # _site/ に出力
 ```
 
-`main` にpushすると GitHub Actions が自動でビルド・デプロイする。
+デプロイは `npm run deploy`（ビルド→Cloudflare Pagesへアップロード）。GitHubはソース管理用で、pushしてもデプロイはされない。
+注: wrangler 3系はNode 18制約による選択。Node 20+に上げたら `wrangler@4` へ更新すること（npm auditの指摘も解消される）。
 
 ## 記事の追加方法
 
@@ -39,9 +40,8 @@ date: 2026-07-07
 
 ## 収益化・売却に向けた残タスク
 
-1. **独自ドメイン取得**（最優先。売却にはドメインごと譲渡できることが必須。実名由来の github.io からの脱却も兼ねる）
-   - ラッコドメイン等で取得 → GitHub Pages のカスタムドメインに設定
-   - `src/_data/site.js` の `url`、`src/robots.txt` のSitemap URL、`eleventy.config.mjs` の `pathPrefix`（`"/"` に変更）を更新
+1. **独自ドメイン取得（来週予定）** — 取得後: Cloudflareダッシュボードでカスタムドメイン設定 → `src/_data/site.js` の url と `src/robots.txt` を差し替え → ついでにGit連携を設定すると自動デプロイに戻せる（推奨）
+
 2. **GA4導入**（売却時のPV・収益エビデンスに必須）
    - GA4プロパティを作成し、`src/_includes/layouts/base.njk` の TODO 箇所に gtag スニペットを挿入
 3. **Google Search Console 登録**とsitemap.xml送信

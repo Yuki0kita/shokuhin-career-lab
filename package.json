@@ -5,9 +5,11 @@
   "description": "食品キャリアラボ — 食品工場・食品メーカーで働く人のためのキャリアアップ特化メディア",
   "scripts": {
     "dev": "eleventy --serve --port 8644",
-    "build": "eleventy"
+    "build": "eleventy",
+    "deploy": "eleventy && wrangler pages deploy _site --project-name shokuhin-career-lab"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^3.114.0"
   }
 }
