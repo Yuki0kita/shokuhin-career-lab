@@ -6,6 +6,5 @@ module.exports = {
   // オリジンのみを書く（サブパスは pathPrefix が付与する）。独自ドメイン取得後はここを差し替える
   url: "https://yuki0kita.github.io",
   author: "ラボ長（現役の食品メーカー社員）",
-  // TODO: Googleフォームを作成してURLをここに貼る（空の間はお問い合わせページに準備中の案内が出る）
-  contactFormUrl: "",
+  contactFormUrl: "https://forms.gle/bVUVVvF1ptj69q1P6",
 };
