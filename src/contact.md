@@ -7,9 +7,13 @@ permalink: /contact/
 
 # お問い合わせ
 
-当サイトへのご意見・ご質問・掲載に関するご相談は、下記メールアドレスまでお願いします。
+当サイトへのご意見・ご質問・掲載に関するご相談は、お問い合わせフォームからお願いします。
 
-**メール: <a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a>**
+{% if site.contactFormUrl %}
+<a class="cta-button" href="{{ site.contactFormUrl }}" target="_blank" rel="noopener">お問い合わせフォームを開く</a>
+{% else %}
+お問い合わせフォームは現在準備中です。恐れ入りますが、公開まで今しばらくお待ちください。
+{% endif %}
 
 - 内容によっては返信までお時間をいただく場合があります
 - 営業目的のご連絡には返信いたしかねる場合があります

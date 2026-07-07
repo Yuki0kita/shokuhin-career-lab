@@ -47,7 +47,7 @@ date: 2026-07-07
 3. **Google Search Console 登録**とsitemap.xml送信
 4. **ASP提携**（A8.net・アクセストレード等で転職案件に提携申請）
    - 承認後、`src/articles/tenshoku-agent-erabikata.md` の TODO 箇所にアフィリエイトリンクを挿入
-5. **サイト専用の問い合わせメールアドレス作成**（個人Gmailからの切替）
+5. **お問い合わせ用Googleフォーム作成** — 作成後、URLを `src/_data/site.js` の `contactFormUrl` に貼る（空の間はお問い合わせページに準備中の案内が表示される）
 6. **記事の継続追加**（食品工場の年収、HACCP・食品衛生管理者などの資格、品質管理のQC検定、食品工場の人間関係、第二新卒×食品メーカーなどが次の候補）
 
 ## 編集ポリシー
