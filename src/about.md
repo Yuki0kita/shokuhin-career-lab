@@ -9,6 +9,8 @@ permalink: /about/
 
 ## 運営者プロフィール
 
+<img class="mascot-right" src="/img/mascot/about.png" width="260" height="238" loading="lazy" alt="運営者キャラクター「ラボ長」">
+
 **ラボ長（ペンネーム）**
 
 食品メーカーの製造部門で働く現役社員です。
