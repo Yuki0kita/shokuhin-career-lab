@@ -1,0 +1,26 @@
+{# 有効な（url入りの）サービスだけ描画する。1件も無ければブロックごと非表示。 #}
+{% set active = [] %}
+{% for s in affiliates.services %}
+  {% if s.url %}{% set active = (active.push(s), active) %}{% endif %}
+{% endfor %}
+{% if active.length > 0 %}
+<aside class="affiliate">
+  <p class="affiliate-label">PR</p>
+  <p class="affiliate-lead">
+    ここから先は広告を含みます。運営者が内容を確認したうえで紹介していますが、
+    登録・利用の判断はご自身の状況に合わせて行ってください。
+  </p>
+  <ul class="affiliate-list">
+    {% for s in active %}
+    <li class="affiliate-card">
+      <p class="affiliate-cat">{{ s.category }}</p>
+      <p class="affiliate-name">{{ s.name }}</p>
+      <p class="affiliate-desc">{{ s.desc }}</p>
+      <a class="cta-button" href="{{ s.url }}" target="_blank" rel="sponsored nofollow noopener">
+        公式サイトを見る
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
