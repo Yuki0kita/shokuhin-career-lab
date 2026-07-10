@@ -8,5 +8,5 @@ module.exports = {
   author: "ラボ長（現役の食品メーカー社員）",
   contactFormUrl: "https://forms.gle/bVUVVvF1ptj69q1P6",
   // GA4の測定ID（G-XXXXXXXXXX）を入れると全ページにgtagが読み込まれる。空の間は計測タグを出さない
-  gaMeasurementId: "",
+  gaMeasurementId: "G-R5SJQEZX85",
 };
