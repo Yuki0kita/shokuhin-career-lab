@@ -3,7 +3,7 @@
 食品工場・食品メーカーで働く人のためのキャリアアップ特化メディア。
 売却（ラッコM&A等）を前提とした資産型サイトとして運営する。
 
-- 本番URL: https://shokuhin-career-lab.pages.dev/
+- 本番URL: https://shokuhin-career.com/
 - 技術: Eleventy（静的サイト） + Cloudflare Pages（`npm run deploy` で手動デプロイ）
 
 ## コンセプト（2026-07 に製造業全般から食品特化へ絞り込み）
