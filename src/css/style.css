@@ -127,6 +127,72 @@ th {
   font-weight: 600;
 }
 
+/* トップのヒーロー（マスコット） */
+.home-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.home-hero-text {
+  flex: 1 1 auto;
+}
+
+.home-hero-text h1 {
+  margin-top: 0;
+}
+
+.home-hero-text p {
+  margin-bottom: 0;
+}
+
+.home-hero-img {
+  flex: 0 0 auto;
+  width: 180px;
+  height: auto;
+}
+
+@media (max-width: 560px) {
+  .home-hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .home-hero-img {
+    width: 150px;
+  }
+}
+
+/* マスコット共通 */
+.mascot-right {
+  float: right;
+  width: 130px;
+  height: auto;
+  margin: 0 0 12px 20px;
+}
+
+@media (max-width: 480px) {
+  .mascot-right {
+    width: 104px;
+    margin-left: 12px;
+  }
+}
+
+/* 404 */
+.notfound {
+  text-align: center;
+  padding: 24px 0 40px;
+}
+
+.notfound img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
 /* トップの記事一覧 */
 .home-intro {
   margin-bottom: 48px;
@@ -186,6 +252,33 @@ th {
   padding: 28px 24px;
   background: var(--color-primary-soft);
   border-radius: 8px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-mascot {
+  flex: 0 0 auto;
+  width: 96px;
+  height: auto;
+}
+
+.cta-body {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 480px) {
+  .cta {
+    gap: 14px;
+  }
+
+  .cta-mascot {
+    width: 68px;
+    align-self: flex-start;
+  }
 }
 
 .cta-heading {
