@@ -19,6 +19,7 @@
       <a class="cta-button" href="{{ s.url }}" target="_blank" rel="sponsored nofollow noopener">
         公式サイトを見る
       </a>
+      {% if s.impression %}<img src="{{ s.impression }}" width="1" height="1" alt="" loading="eager">{% endif %}
     </li>
     {% endfor %}
   </ul>
