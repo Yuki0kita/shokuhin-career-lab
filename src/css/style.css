@@ -406,3 +406,91 @@ th {
     font-size: 20px;
   }
 }
+
+/* 目次 */
+.toc {
+  margin: 2rem 0 2.5rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--color-border, #ddd);
+  background: #fafafa;
+}
+
+.toc-title {
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.toc ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.toc ol ol {
+  margin: 0.3rem 0 0.5rem;
+}
+
+.toc li {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+
+.toc a {
+  color: inherit;
+}
+
+/* 強調とマーカー
+   参考: オトナルのブログ記事の実装（linear-gradient(transparent 76%, #f8e81c 0%)）
+   アクセント色は本サイトの --color-primary に置き換えている */
+.article-body strong {
+  font-weight: 700;
+}
+
+.article-body mark {
+  background: linear-gradient(transparent 76%, #f8e81c 0%);
+  color: inherit;
+  padding: 0;
+}
+
+/* 記事内の h3 に左アクセント。h2 との階層差を出す */
+.article-body h3 {
+  background-color: var(--color-primary-soft);
+  border-left: 6px solid var(--color-primary);
+  border-bottom-right-radius: 12px;
+  padding: 6px 12px;
+  margin: 40px 0 16px;
+}
+
+/* 記事内の表 */
+.article-body table {
+  margin: 1.8rem 0;
+  font-size: 0.95rem;
+}
+
+.article-body th {
+  background: var(--color-primary-soft);
+  white-space: nowrap;
+}
+
+/* 読者の疑問リスト（リード直後） */
+.article-body .questions {
+  margin: 1.6rem 0 2rem;
+  padding: 1.1rem 1.4rem;
+  background: #f1f1f1;
+  color: #464646;
+}
+
+.article-body .questions ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.article-body .questions li {
+  margin: 0.4rem 0;
+  font-weight: 700;
+}
+
+/* よくある質問 */
+.article-body .faq h3 {
+  font-size: 17px;
+}
