@@ -1,0 +1,7 @@
+{# 記事中盤に置く小さめのCTA。読者が「動く」と決めた直後の位置に入れる。
+   末尾の cta.njk とは文言を変える（同じ文が2回出ると読み飛ばされるため）。 #}
+<aside class="inline-cta">
+  <p class="inline-cta-heading">{{ heading }}</p>
+  <p class="inline-cta-text">{{ text }}</p>
+  <a class="inline-cta-link" href="{{ href }}">{{ label }}</a>
+</aside>
