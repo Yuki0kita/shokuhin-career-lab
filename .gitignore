@@ -1,3 +1,7 @@
 node_modules/
 _site/
 .DS_Store
+
+# 認証鍵はリポジトリに入れない
+secrets/
+*-sa.json

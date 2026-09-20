@@ -1,0 +1,53 @@
+{
+  "site": "https://shokuhin-career.com/",
+  "keywords": [
+    {
+      "keyword": "食品工場 夜勤 きつい",
+      "targetPath": "/articles/yakin-koutai-tsurai/",
+      "priority": "high",
+      "note": "夜勤の身体的つらさを抱えて抜け道を探している現職。集客の柱"
+    },
+    {
+      "keyword": "食品工場 辞めたい",
+      "targetPath": "/articles/koujou-yametai/",
+      "priority": "high",
+      "note": "退職を迷っている現職。判断材料を探している"
+    },
+    {
+      "keyword": "生産技術 とは",
+      "targetPath": "/articles/seisan-gijutsu-towa/",
+      "priority": "high",
+      "note": "職種名は聞いたが実務が分からない層。検索量が大きい"
+    },
+    {
+      "keyword": "品質保証 転職",
+      "targetPath": "/articles/hinshitsu-hosho-career/",
+      "priority": "normal",
+      "note": "現場経験を活かせる異動先を探している"
+    },
+    {
+      "keyword": "食品メーカー キャリアパス",
+      "targetPath": "/articles/shokuhin-maker-career/",
+      "priority": "normal",
+      "note": "製造部門からの将来像を知りたい"
+    },
+    {
+      "keyword": "食品工場 生成AI 活用",
+      "targetPath": "/articles/seisei-ai-shokuhin-koujou/",
+      "priority": "normal",
+      "note": "工場側の企画・改善担当。競合が薄い"
+    },
+    {
+      "keyword": "製造業 DX人材",
+      "targetPath": "/articles/seizougyou-dx-jinzai/",
+      "priority": "normal",
+      "note": "現場出身でDX側に回りたい層"
+    },
+    {
+      "keyword": "工場 DX 定着しない",
+      "targetPath": "/articles/koujou-dx-teichaku/",
+      "priority": "low",
+      "note": "導入側の悩み。読者層は狭いが競合も薄い"
+    }
+  ]
+}
