@@ -1,4 +1,86 @@
 {
   "site": "https://shokuhin-career.com/",
-  "snapshots": []
+  "snapshots": [
+    {
+      "measuredAt": "2026-09-26",
+      "source": "gsc",
+      "windowDays": 28,
+      "startDate": "2026-08-27",
+      "endDate": "2026-09-23",
+      "results": [
+        {
+          "keyword": "食品工場 夜勤 きつい",
+          "targetPath": "/articles/yakin-koutai-tsurai/",
+          "priority": "high",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "食品工場 辞めたい",
+          "targetPath": "/articles/koujou-yametai/",
+          "priority": "high",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "生産技術 とは",
+          "targetPath": "/articles/seisan-gijutsu-towa/",
+          "priority": "high",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "品質保証 転職",
+          "targetPath": "/articles/hinshitsu-hosho-career/",
+          "priority": "normal",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "食品メーカー キャリアパス",
+          "targetPath": "/articles/shokuhin-maker-career/",
+          "priority": "normal",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "食品工場 生成AI 活用",
+          "targetPath": "/articles/seisei-ai-shokuhin-koujou/",
+          "priority": "normal",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "製造業 DX人材",
+          "targetPath": "/articles/seizougyou-dx-jinzai/",
+          "priority": "normal",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        },
+        {
+          "keyword": "工場 DX 定着しない",
+          "targetPath": "/articles/koujou-dx-teichaku/",
+          "priority": "low",
+          "rank": null,
+          "impressions": 0,
+          "clicks": 0,
+          "actualPage": null
+        }
+      ]
+    }
+  ]
 }

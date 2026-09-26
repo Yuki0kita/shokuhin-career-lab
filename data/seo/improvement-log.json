@@ -19,7 +19,7 @@
             "src/articles/yakin-keikensha-koe.md",
             "src/articles/yakin-koutai-tsurai.md"
           ],
-          "note": "GSC鍵が無く計測前。rankAtActionは不明。GSC設定後に初回計測してから判定する"
+          "note": "2026-09-26 GSC接続後に確認。トップページ以外の全14ページが「検出 - インデックス未登録」（一度もクロールされていない）。順位以前にインデックスされていないため、この改善の効果判定はインデックス登録後に行う。nextReviewDateは登録状況を見て延長する"
         }
       ]
     }
