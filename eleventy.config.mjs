@@ -1,6 +1,9 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
+  // CSSのURLにビルドごとの値を付け、更新時に古いキャッシュが残らないようにする
+  eleventyConfig.addGlobalData("assetVersion", () => Date.now().toString(36));
+
   // Cloudflare Pages でルート配信（サブパス配信に戻す場合は pathPrefix を変更）
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
