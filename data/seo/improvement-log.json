@@ -1,4 +1,27 @@
 {
   "site": "https://shokuhin-career.com/",
-  "entries": []
+  "entries": [
+    {
+      "keyword": "食品工場 夜勤 きつい",
+      "targetPath": "/articles/yakin-keikensha-koe/",
+      "status": "observing",
+      "nextReviewDate": "2026-10-10",
+      "failedAttempts": 0,
+      "actions": [
+        {
+          "date": "2026-09-26",
+          "rankAtAction": null,
+          "impressionsAtAction": null,
+          "needs": "食品工場で夜勤を検討中・勤務中の人が、実際どれくらいきついのか、その理由と、続けるか辞めるかの判断材料を知りたい",
+          "gap": "同じ意図を2記事に分割しておりカニバリゼーション。どちらのtitleにも「きつい」が無く、yakin-koutai-tsuraiは本文にも0回。上位の競合は理由・給料・工夫・抜け出し方を1本にまとめている",
+          "done": "yakin-keikensha-koeをこの語の受け皿に一本化（title/description/リード/最初のh2に食品工場・きついを入れる）。yakin-koutai-tsuraiは「抜け出す」意図のまま残し、相互リンクで役割を分けた",
+          "files": [
+            "src/articles/yakin-keikensha-koe.md",
+            "src/articles/yakin-koutai-tsurai.md"
+          ],
+          "note": "GSC鍵が無く計測前。rankAtActionは不明。GSC設定後に初回計測してから判定する"
+        }
+      ]
+    }
+  ]
 }
