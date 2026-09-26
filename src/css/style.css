@@ -532,3 +532,40 @@ th {
   outline: 3px solid #14344a;
   outline-offset: 2px;
 }
+
+/* 経験者の声（吹き出し）。色は増やさず、無彩色の面と細い罫線で区切る */
+.article-body .voices {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 1.6rem 0 2rem;
+}
+.article-body .voice {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.article-body .voice-who {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.article-body .voice-text {
+  position: relative;
+  margin: 0 0 0 0.6rem;
+  padding: 0.85rem 1.1rem;
+  background: #f1f1f1;
+  border-radius: 10px;
+  color: #33383d;
+  line-height: 1.8;
+}
+.article-body .voice-text::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 18px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #f1f1f1;
+}
