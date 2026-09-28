@@ -14,7 +14,7 @@ layout: layouts/base.njk
   <div class="article-body">
     {{ content | safe }}
   </div>
-  {% include "partials/cta.njk" %}
+  {% if audience == "manager" %}{% include "partials/cta-manager.njk" %}{% else %}{% include "partials/cta.njk" %}{% endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
