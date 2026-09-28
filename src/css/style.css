@@ -472,6 +472,15 @@ th {
   white-space: nowrap;
 }
 
+/* 列の多い表はスマホで横スクロールにする */
+@media (max-width: 600px) {
+  .article-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* 読者の疑問リスト（リード直後） */
 .article-body .questions {
   margin: 1.6rem 0 2rem;
