@@ -3,6 +3,10 @@ layout: layouts/article.njk
 title: 食品工場のDXが現場に定着しない5つの理由とは？作った側から見えた壁を徹底解説
 description: 食品工場にシステムやツールを入れても、現場で使われないまま消えることがあります。現役の食品メーカー社員が、自分で作って定着したものと使われなくなったものの差を、5つの壁として実体験から解説します。
 date: 2026-08-24
+related:
+  - gyoumu-flow-seiri
+  - naisei-lowcode
+  - seisei-ai-shokuhin-koujou
 ---
 
 食品工場のDXが定着しない原因は、技術ではありません。<mark>楽になる人と、手間を負う人がずれていること</mark>がほとんどです。

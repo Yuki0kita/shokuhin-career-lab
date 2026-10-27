@@ -1,0 +1,13 @@
+{%- if related and related.length %}
+<nav class="related" aria-label="関連記事">
+  <p class="related-title">関連記事</p>
+  <ul>
+    {%- for slug in related %}
+    {%- set target = collections.articles | articleBySlug(slug) %}
+    {%- if target %}
+    <li><a href="{{ target.url }}">{{ target.data.title }}</a></li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif %}

@@ -578,3 +578,23 @@ th {
   border-right: 7px solid transparent;
   border-bottom: 7px solid #f1f1f1;
 }
+
+/* 記事末尾の関連記事（front matter の related から生成） */
+.related {
+  margin: 48px 0 32px;
+  padding: 20px 24px;
+  background: var(--color-primary-soft);
+  border-radius: 8px;
+}
+.related-title {
+  margin: 0 0 8px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.related ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.related li + li {
+  margin-top: 8px;
+}

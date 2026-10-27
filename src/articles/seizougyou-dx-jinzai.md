@@ -3,6 +3,10 @@ layout: layouts/article.njk
 title: 食品工場のDX人材とは？現場出身者がなるための3ステップを実体験から解説
 description: 食品工場のDXの実態と、現場経験者がDX人材になるための現実的なステップを解説。運営者自身が現場からDX業務へ移り、月数十時間規模の工数削減を実現した実体験に基づく一次情報です。
 date: 2026-07-07
+related:
+  - koujou-dx-teichaku
+  - naisei-lowcode
+  - shokuhin-maker-career
 ---
 
 食品工場のDXを担っているのは、ITエンジニアではありません。<mark>現場を知る社員が主役になっているケースが非常に多い</mark>のが実態です。

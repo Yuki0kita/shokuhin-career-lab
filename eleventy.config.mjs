@@ -67,6 +67,13 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date)
   );
 
+  // front matter の related（記事スラッグの配列）から記事を引く。存在しないスラッグはビルドを止める
+  eleventyConfig.addFilter("articleBySlug", (articles, slug) => {
+    const found = articles.find((a) => a.fileSlug === slug);
+    if (!found) throw new Error(`related に存在しない記事スラッグがあります: ${slug}`);
+    return found;
+  });
+
   eleventyConfig.addFilter(
     "readableDate",
     (date) =>
