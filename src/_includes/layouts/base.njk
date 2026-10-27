@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
-  <link rel="canonical" href="{{ site.url }}{{ page.url | url }}">
+  {% if noindex %}<meta name="robots" content="noindex">{% else %}<link rel="canonical" href="{{ site.url }}{{ page.url | url }}">{% endif %}
   <meta property="og:type" content="{% if layout == 'layouts/article.njk' %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
   <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{{ site.url }}/img/mascot/hero.png">
+  <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css?v={{ assetVersion }}">
   {% if site.gaMeasurementId %}

@@ -3,6 +3,11 @@ layout: layouts/article.njk
 title: 食品工場の夜勤・交替勤務がつらい。抜け出すための4つの選択肢を解説
 description: 食品工場の夜勤・交替勤務のつらさは我慢で解決しない。日勤職種への社内異動、キャリアチェンジ、同業日勤への転職など、食品工場で働く人が取れる現実的な選択肢を現役の食品メーカー社員が解説します。
 date: 2026-07-07
+related:
+  - yakin-keikensha-koe
+  - koujou-yametai
+  - shokuhin-maker-career
+  - tenshoku-agent-erabikata
 ---
 
 夜勤がつらいのは体質の問題であって、<mark>能力や根性の問題ではありません</mark>。そして食品工場のなかにも、日勤で働ける現場は実在します。

@@ -3,6 +3,10 @@ layout: layouts/article.njk
 title: 生産技術とは？仕事内容・年収・食品工場の現場からなる2つのルートを解説
 description: 生産技術の仕事内容・年収の実感値・向いている人を、食品工場の現場出身の現役社員が解説。現場オペレーターから生産技術に進むための現実的な2つのルートを紹介します。
 date: 2026-07-07
+related:
+  - seisan-gijutsu-bunkei
+  - yakin-koutai-tsurai
+  - shokuhin-maker-career
 ---
 
 生産技術は、<mark>食品工場で働く人のキャリアアップ先として最も経験の連続性が高い職種です</mark>。現場で身につけたラインの知識が、そのまま評価される場所だからです。

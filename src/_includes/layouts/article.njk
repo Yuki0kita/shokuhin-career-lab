@@ -14,6 +14,7 @@ layout: layouts/base.njk
   <div class="article-body">
     {{ content | safe }}
   </div>
+  {% include "partials/related.njk" %}
   {% if audience == "manager" %}{% include "partials/cta-manager.njk" %}{% else %}{% include "partials/cta.njk" %}{% endif %}
   <script type="application/ld+json">
   {
@@ -22,12 +23,26 @@ layout: layouts/base.njk
     "headline": {{ title | dump | safe }},
     "description": {{ description | dump | safe }},
     "datePublished": "{{ page.date | isoDate }}",
+    "dateModified": "{{ (updated or page.date) | isoDate }}",
+    "url": "{{ site.url }}{{ page.url | url }}",
+    "mainEntityOfPage": "{{ site.url }}{{ page.url | url }}",
+    "image": "{{ site.url }}/img/mascot/hero.png",
     "author": {
       "@type": "Person",
       "name": "ラボ長",
       "description": "現役の食品メーカー社員。製造DX・SCM改善を担当。"
     },
-    "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }} }
+    "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }}, "url": "{{ site.url }}/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": {{ site.name | dump | safe }}, "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": {{ title | dump | safe }}, "item": "{{ site.url }}{{ page.url | url }}" }
+    ]
   }
   </script>
 </article>

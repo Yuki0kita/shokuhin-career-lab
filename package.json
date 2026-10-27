@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "eleventy --serve --port 8644",
     "build": "eleventy",
-    "deploy": "eleventy && wrangler pages deploy _site --project-name shokuhin-career-lab"
+    "deploy": "npm test && wrangler pages deploy _site --project-name shokuhin-career-lab",
+    "test": "eleventy --quiet && node --test test/*.test.mjs",
+    "check:external": "node scripts/check-external-links.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

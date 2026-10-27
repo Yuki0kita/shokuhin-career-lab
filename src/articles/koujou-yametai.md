@@ -3,6 +3,10 @@ layout: layouts/article.njk
 title: 食品工場を辞めたいと思ったら？決断の前に整理すべき3つのことを解説
 description: 「食品工場を辞めたい」の正体は業務量ではなく、信頼・公平性・将来性の喪失であることが多い。現役の食品メーカー社員が、辞める前に整理すべき判断軸と、辞めずにキャリアを変える選択肢を解説します。
 date: 2026-07-07
+related:
+  - yakin-koutai-tsurai
+  - yakin-keikensha-koe
+  - shokuhin-maker-career
 ---
 
 「辞めたい」の正体を特定しないまま転職すると、<mark>次の職場で同じ壁にぶつかります</mark>。決定打になっているのは、たいてい業務量ではないからです。

@@ -3,6 +3,11 @@ layout: layouts/article.njk
 title: 食品工場の夜勤はきつい？経験者の声で分かる5つの理由と続ける人の工夫を解説
 description: 食品工場の夜勤はきついのか。夜勤経験者の声をもとに、きつい5つの理由と体と生活に何が起きるのか、交替勤務と夜勤固定の違い、続けている人の工夫、お金の実態を食品メーカーの現役社員が整理して解説します。
 date: 2026-09-26
+related:
+  - yakin-koutai-tsurai
+  - koujou-yametai
+  - hinshitsu-hosho-career
+  - tenshoku-agent-erabikata
 ---
 
 食品工場の夜勤は、<mark>何年続けても「慣れた」とは言い切れない人が多い、きつい働き方です</mark>。夜勤を経験した人の声を集めると、多くの人がそう語ります。

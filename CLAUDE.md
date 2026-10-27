@@ -9,6 +9,9 @@
 - 記事は `src/articles/*.md`。レイアウトは `src/_includes/layouts/`
 - サイト共通情報は `src/_data/site.js`（独自ドメイン移行時はここの url と `src/robots.txt` を変更）
 - デプロイは `npm run deploy`（Cloudflare Pages、プロジェクト名 shokuhin-career-lab）。pushでは自動デプロイされない
+- `npm test` でビルドし、リンク切れ・メタ情報・構造化データ・sitemapを検証する（`test/site.test.mjs`）。deploy も先に npm test を通す
+- 外部リンクは `npm run check:external` で別途確認する（ネットワークが必要なため npm test には含めない）
+- 記事末尾の関連記事は front matter の `related`（記事スラッグの配列）で指定する
 
 ## コンテンツ方針（厳守）
 

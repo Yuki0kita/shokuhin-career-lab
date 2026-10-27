@@ -3,6 +3,10 @@ layout: layouts/article.njk
 title: 食品工場からの転職。エージェントと転職サイトの現実的な使い分けを解説
 description: 食品工場・食品メーカーからの転職で、転職エージェントと転職サイトをどう使い分けるべきか。現役の食品メーカー社員が、目的別の選び方と登録前に知っておくべき注意点を解説します。
 date: 2026-07-07
+related:
+  - yakin-koutai-tsurai
+  - yakin-keikensha-koe
+  - koujou-yametai
 ---
 
 転職サービスは「どれが一番いいか」ではなく、<mark>自分がいまどの段階にいるかで選ぶもの</mark>です。情報収集の段階と応募の段階では、使うべき道具が違う。
